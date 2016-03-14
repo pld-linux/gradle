@@ -1,11 +1,11 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	2.11
+Version:	2.12
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	http://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	cd183e2f6720c2caa74738389209d1d1
+# Source0-md5:	40b75543d7dfffddb566d915f7f95f72
 URL:		http://www.gradle.org/
 Requires:	jdk
 BuildArch:	noarch
