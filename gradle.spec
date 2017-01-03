@@ -1,11 +1,11 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	3.2.1
+Version:	3.3
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	http://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	68f569d4e86edf034fce86fe12e79522
+# Source0-md5:	9a2d209ade9b1a3727bd42f6508dea9d
 URL:		http://www.gradle.org/
 Requires:	jdk >= 1.7
 BuildArch:	noarch
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NOTICE changelog.txt getting-started.html
+%doc NOTICE getting-started.html
 %attr(755,root,root) %{_bindir}/gradle
 %dir %{_datadir}/%{name}
 %dir %{_datadir}/%{name}/bin
