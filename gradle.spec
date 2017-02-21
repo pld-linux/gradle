@@ -1,11 +1,11 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	3.3
+Version:	3.4
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	http://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	9a2d209ade9b1a3727bd42f6508dea9d
+# Source0-md5:	d172a02b7ac1a2fea9b60bb00d95f8ca
 URL:		http://www.gradle.org/
 Requires:	jdk >= 1.7
 BuildArch:	noarch
