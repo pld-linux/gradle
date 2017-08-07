@@ -1,15 +1,18 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	4.0.2
+Version:	4.1
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	http://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	1c7055a744abfda489511f1f6136a71f
+# Source0-md5:	3014f027ae08bf3d9f7360e4e4352e80
 URL:		http://www.gradle.org/
+BuildRequires:	rpmbuild(macros) >= 1.672
 Requires:	jdk >= 1.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define _noautoreq_java ClassDataVersion
 
 %description
 Gradle is a build system written in Groovy. It uses Groovy
