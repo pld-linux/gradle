@@ -1,11 +1,11 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	4.3
+Version:	4.3.1
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	http://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	01c94598a0c2e65706f652b9cb95ccc6
+# Source0-md5:	02ba854925420adc157ae2c7ecd8a589
 URL:		http://www.gradle.org/
 BuildRequires:	rpmbuild(macros) >= 1.672
 Requires:	jdk >= 1.7
@@ -24,6 +24,8 @@ and the convenience of a build-by-convention behavior.
 
 %prep
 %setup -q
+
+%{__sed} -i -e '1s,/usr/bin/env sh,/bin/sh,' bin/gradle
 
 %install
 rm -rf $RPM_BUILD_ROOT
