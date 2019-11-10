@@ -1,11 +1,11 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	5.6.4
+Version:	6.0
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	http://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	d1456582f1513c1c04d4bd4ae952f25d
+# Source0-md5:	fcad4ba9f9d21965f9541e679b0a9773
 URL:		http://www.gradle.org/
 BuildRequires:	rpmbuild(macros) >= 1.672
 Requires:	jdk >= 1.7
@@ -34,7 +34,7 @@ ln -sf %{_datadir}/%{name}/bin/gradle $RPM_BUILD_ROOT%{_bindir}/gradle
 
 install -d $RPM_BUILD_ROOT
 install bin/gradle $RPM_BUILD_ROOT%{_datadir}/%{name}/bin
-cp -a lib media $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -a lib $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -47,4 +47,3 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/%{name}/bin
 %attr(755,root,root) %{_datadir}/%{name}/bin/gradle
 %{_datadir}/%{name}/lib
-%{_datadir}/%{name}/media
