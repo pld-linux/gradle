@@ -1,11 +1,11 @@
 Summary:	Groovy based build system
 Name:		gradle
-Version:	6.5.1
+Version:	6.6
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Java
 Source0:	https://services.gradle.org/distributions/%{name}-%{version}-bin.zip
-# Source0-md5:	adda8c3cffc7eb261feb1eafcc13a32c
+# Source0-md5:	62949a20c5c7db96d5d68b5b3b88ae87
 URL:		http://www.gradle.org/
 BuildRequires:	rpmbuild(macros) >= 1.672
 Requires:	jdk >= 1.8
